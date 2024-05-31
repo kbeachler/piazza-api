@@ -5,6 +5,7 @@ import time
 
 from piazza_api import Piazza
 from piazza_api.exceptions import RequestError
+from json_len import calc_len
 
 
 def check_stepik(post):
@@ -30,6 +31,8 @@ p.user_login()
 cse_8a = p.network("lueekqs5pbe49z")
 # inclusive lower bound, exclusive upper bound
 processor(1, 200, "post_data.json")
+len = calc_len("post_data.json")
+print(f"Size of json: {len} ")
 
 
 
