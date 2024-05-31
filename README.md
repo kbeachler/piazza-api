@@ -1,11 +1,11 @@
-# piazza-api
+# General: piazza-api
 
 [![PyPI version](https://badge.fury.io/py/piazza-api.png)](http://badge.fury.io/py/piazza-api)
 
 Unofficial Client for Piazza's Internal API
 
 
-## Usage
+## Basic Usage
 
 ```python
 >>> from piazza_api import Piazza
@@ -72,6 +72,25 @@ cd piazza-api
 docker build -t piazza-api .
 docker run -it piazza-api:latest
 ```
+# CSE 8A 
+
+
+## Introduction
+
+Our goal is to extract Stepik-related posts from CSE 8A Spring Piazza (with professor Miranda at UCSD) and put them into a simplified format that can easily be comprehended and used as data for our research. We do this by producing a JSON file with a specific format (shown in the next section) which can be used to easily read a post and the chain of responses associated with it. 
+
+## JSON Format
+
+For each post, we have an object represent the main message. This object includes 4 fields: the post number on Piazza (int), the post title (string), post description (string), and the history (list of objects). The post description is basically the body/question posed by the student. The history of a post is where we can track instructor or student responses, or any follow-up discussion on a post. Each object in our history list has four fields as well: message number (int), role (string), description (string), and follow-up (list of objects). The role represents whether the message is by an instructoreo or student, and the follow-up is a list of objects with the exact same format. This is representative of the threads that exist in a Piazza post. It is important to note that either a student or instructor can provide the "answer" to a question, and the student answer will be endorsed. Follow-up discussion can take place between anyone. 
+
+## Usage
+The main script that you will interact with is post_processor.py.
+
+``` python3 post_processor.py ```
+
+ In its current state, running the above line will prompt you to log into Piazza with your credentials. Ensure that you have access to Miranda's Piazza first. Then, it will process posts 1-200 by extracting only those pertaining to Stepik, converting them to the proper json format (as seen in json_conv.py) and then dumping these json objects continuously to a file called post_data.json.
+
+
 
 ## Contribute
 
