@@ -7,6 +7,8 @@ Output: json file produced and added to, or existing json file is modified and a
 import json
 import os
 
+from parse_html import parse_def
+
 def get_role_rep(dic):
     role = "instructor"
     if dic['anon'] == 'stud':
@@ -26,7 +28,7 @@ def extract_follow_ups(follow_ups, parent_idx):
         follow_up_data = {
             "msg_number": f"{parent_idx}.{follow_up_idx + 1}",
             "role": get_role_rep(follow_up),
-            "description": follow_up['subject'],
+            "description": parse_def(follow_up['subject']),
             "follow_up": extract_follow_ups(follow_up['children'], f"{parent_idx}.{follow_up_idx + 1}")
         }
         follow_up_list.append(follow_up_data)
@@ -43,7 +45,7 @@ def extract_child_history(children, anon_map):
                 child_data = {
                 "msg_number": str(idx + 1),
                 "role": "student",
-                "description": child['subject'],
+                "description": parse_def(child['subject']),
                 "follow_up": extract_follow_ups(child['children'], idx + 1)
                 }
                 history.append(child_data)
@@ -53,7 +55,7 @@ def extract_child_history(children, anon_map):
                 child_data = {
                     "msg_number": str(idx + 1),
                     "role": get_role_answer(child['type']),
-                    "description": child_history['content'],
+                    "description": parse_def(child_history['content']),
                     "follow_up": extract_follow_ups(child['children'], idx + 1)
                 }
                 history.append(child_data)
@@ -64,7 +66,7 @@ def extract_child_history(children, anon_map):
                 child_data = {
                     "msg_number": str(idx + 1),
                     "role": get_role_rep(child),
-                    "description": child['subject'],
+                    "description": parse_def(child['subject']),
                     "follow_up": extract_follow_ups(child['children'], idx + 1)
                 }
                 history.append(child_data)
@@ -74,7 +76,7 @@ def extract_child_history(children, anon_map):
 def extract_post_data(post_data):
     post_number = post_data['nr']
     post_title = post_data['history'][0].get('subject')
-    post_description = post_data['history'][0].get('content')
+    post_description = parse_def(post_data['history'][0].get('content'))
     
     history = extract_child_history(post_data.get('children', []), post_data.get('anon_map', {}))
     

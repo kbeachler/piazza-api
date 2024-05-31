@@ -1,0 +1,514 @@
+[
+    {
+        "post_number": 30,
+        "post_title": "Where to find stepik review quizzes?",
+        "description": "Where do we find the weekly review quizzes on stepik? I tried looking for this week's and could not find it, is it just not posted yet?",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Near the top of the lecture pages:\n- Lecture 2 - https://ucsd-cse8a-sp24.github.io/lectures/lecture2.html\n- Lecture 3 - https://ucsd-cse8a-sp24.github.io/lectures/lecture3.html\n\n",
+                "follow_up": []
+            },
+            {
+                "msg_number": "2",
+                "role": "student",
+                "description": "Is that the orange link? But that lead to textbook with problems\u00a0\n\n(At the end of each week, there will be a Stepik Exercises, which will be due at 8:00 AM PT (Pacific Time) on Saturdays.)\n\nIn the syllabus, its says that there will be a Stepik Exercises. How we find that?\n\n(There will be 10 RQs in total and you can attempt the Stepik exercises multiple times until you get them correct!)\n\nThere are no 10 RQs, or \"RQs\" means those questions at the end of each section?\u00a0\n\nPlease help, Thank You!",
+                "follow_up": [
+                    {
+                        "msg_number": "2.1",
+                        "role": "instructor",
+                        "description": "As listed in the syllabus, \"Stepik Exercises (i.e. Review Quizzes/RQs): 20%\"\n\nSo please be sure to complete all the questions in the assigned Stepik readings to receive credit for the Stepik Exercises portion of the grade.\u00a0",
+                        "follow_up": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "post_number": 37,
+        "post_title": "Stepik is not working",
+        "description": "I am trying to complete the assignments on Stepik however my code is being read incorrectly. I tried the same program on IDLE and got the correct output but when I copy paste that code onto Stepik it is telling me that my program is incorrect. I tried to type it out the same way I did on IDLE to get that output but It didn't work.",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Hi there! I would recommend resetting the problem and rewriting in the code from scratch. If you are still experiencing this issue, please feel free to make a private piazza post to the instructors only including a screenshot of this issue for further assistance. Thanks!",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 38,
+        "post_title": "Stepik 1.7 Practice Question error",
+        "description": "When doing the second last practice question on Stepic topic 1.7, the code and output in the question is correct when I run my code. However the website says my output is wrong (37) when it is clearly correct (30). A similar code in the next question did not yield any errors. How could I fix this issue? Thank you!",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "student",
+                "description": "In the intro for this problem, it is explained that \"Your manager is using an old system where the number of hours you input is always rounded down to the nearest hour.\" The practice problem requires that you take that rounding down into account.",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 42,
+        "post_title": "Stepik schedule",
+        "description": "Can't find the stepik learning schedule. Could anyone tell me where to find it?\n\nThanks!",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "The assigned chapters are listed on the lecture pages.\n\nYou can find the lecture pages from the schedule. The lecture pages also have the required pre-lecture videos.",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 44,
+        "post_title": "questions about stepik survey form",
+        "description": "\nas I tried to fill out the form,the link turns out to be expired.could you please send me a new link?thank you",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Hi,The link seems to be working. Could you try again?This is the link:\u00a0https://forms.gle/qRcsGQtHyZRspZXp9",
+                "follow_up": []
+            },
+            {
+                "msg_number": "2",
+                "role": "student",
+                "description": "\nsorry I tried again but still failed to fill the form",
+                "follow_up": [
+                    {
+                        "msg_number": "2.1",
+                        "role": "instructor",
+                        "description": "Are you signed-in to your UCSD account? It seems to be an organization viewing issue which may indicate that you are not signed in. Thanks for letting us know :-)",
+                        "follow_up": []
+                    },
+                    {
+                        "msg_number": "2.2",
+                        "role": "instructor",
+                        "description": "Since your an extension student, you will need to email me your Name, PID, and Stepik ID.",
+                        "follow_up": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "post_number": 46,
+        "post_title": "Stepik exercises",
+        "description": "what is the late policy for the Stepik exercises?\u00a0",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "As per the syllabus,\u00a0\n\nThe online texbook records your progress, and we give a schedule of expected times to finish the readings. There is no penalty for completing these late, but all Stepik exercises must be completed by\u00a0Saturday of Week 10 by 8am. After this time, no late submissions will be accepted, for any reason.\nTo ensure you get credit for the Stepik exercises, you must fill out this\u00a0form\u00a0by Friday of Week 2. Starting in Week 3, we will strive to post Stepik grade updates to Canvas every week.\n",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 48,
+        "post_title": "Stepik 1.3, Step 3 Exercise error",
+        "description": "I'm not sure what I did wrong but I tried various different ways and cannot get it correct.",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Hey,\nThink about how you can compare the lengths of two strings. Whichever length is longer, that length should be stored in your longer_length variable.\n\nHint: Take a look at the max() function. To help you recall it, watch this pre-lecture video for Lecture 2 which shows you how to use it.",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 49,
+        "post_title": "Stepik issue",
+        "description": "I have written the following code and tested it on idle to ensure that I get the right output. I'm not sure what this error is or how to fix it but I am positive that the code is correct. Please let me know how to fix this.",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Hey,\nYou should assume that s1, s2 and s3 are already given to you. Don't worry about using the input() function to get these variables, that's being done internally. You can just keep line 5 of your code and it should pass the test.\n\nHint: Try using the button \"Run code\" to see how the output of the code you've written looks like. Examine the output, then reiterate and keep modifying your code until it matches the expected output given in the problem.",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 56,
+        "post_title": "Stepik 2.1 Exercise Error",
+        "description": "Hi, I saw in another post that another student seemed to have the same problem and the reply was to make a private post with a screenshot. When I run my code in IDLE it works as it should but when I run it\u00a0through Stepik it doesn't work. I made sure to type it directly into Stepik and not copy and paste from IDLE as well as reset/reload the problem multiple times.\n\n",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Referencing the problem instructions:\n\"Write a function called\u00a0is_less_than_10\u00a0that takes an integer and returns a boolean value,\u00a0True\u00a0if the integer is less than\u00a010, otherwise\u00a0False (see the sample inputs for some examples).\"\n\nIn this implementation, is_less_than_10 is a boolean variable, rather than a function. A function definition would include a function header def is_less_than_10():, as well as the specified parameter, return type, and the other necessary code in the body of the function.\u00a0",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 57,
+        "post_title": "Stepik site not responding",
+        "description": "Hi guys, is anyone else receiving a 502 error message when logging into Stepik? I\u2019ve restarted my computer and closed/reopened tabs etc. Let me know if this is happening for anyone! Thank you",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "student",
+                "description": "Never mind I got it!\u00a0",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 58,
+        "post_title": "Stepik 1.3 step 2 question error",
+        "description": "Hi instructors, I keep having this <function joined_with_commas at 0x7fdc203d2e18> message under my output and I have no idea where's that from.",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "The instructions say:\n\"Define a variable called joined_with_commas\u00a0that holds a string with the contents of\u00a0s1, followed by a comma, followed by\u00a0s2, followed by a comma, followed by\u00a0s3.\"\n\nYour implementation here defines joined_with_comma as a function, rather than a variable, hence the error message. In cases like this, where you can see that your code does the string joining part correctly but the answer is marked as incorrect, be sure to review the instructions carefully!",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 69,
+        "post_title": "Stepik not working",
+        "description": "Hello,\nMy stepik has been extremely glitchy since I first started using it. It fails to save my points for all of the assignments that I have completed and will give me a green sign for correct answers but not say that I have been awarded points for the section. It also doesn't let me edit my code correctly because every time I type a new character into the file, the characters all move around. I can't click on a specific section with my cursor to edit: I have to delete the entire line to fix a typo, etc. Also, it currently is not letting me submit/run code at all. The site responds and lets me access all the content but not submit at all.\nHas this been happening to anyone else? I cannot figure out why this website won't work for me.\u00a0",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Hello,I have noted a few complaints from students regarding Stepik.\u00a0 One solution that has resolved many \"glitches\" is to whitelist Stepik if you are using any adblocker software.\u00a0 Another solution is to clear your browser cache and restart your browser.\u00a0 it has been noted that Stepik works best with Google Chrome.\u00a0 \u00a0Additionally, there have been comments that after long periods of inactivity, stepik will become unresponsive so it is best to close the stepik tab and re-open it if you notice that.I hope this helps, if you have continued issues please try and provide screenshots if they can show the issue.",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 70,
+        "post_title": "Stepik has not been saving",
+        "description": "Hello,\n\nEarlier this evening I made a post about my stepik not working. It was a new development tonight on my computer that I was not able to submit anything (submit and run code buttons were not responding). However, these functions previously had been working and after refreshing a few times I was able to finish every assignment and have it say all green and full points received. Tonight, I completed the assignment on my iPad and it worked fully. However, when looking back through the previous assignments on my stepik, it did not have full green for ANY of them, even though I have done every single one.\u00a0\nI am very worried about the possibility of none of this data having been saved due to this glitch and I was hoping there was some way you would be able to tell me whether it indicates for you all that I have completed the assignments and gotten credit. Otherwise, I do not know how I am supposed to ensure that this site functions fully and I am getting credit for doing all of these assignments. Thank you so much.\n\nBest,\nLucy Catalano",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Sorry you are having issues with Stepik.\n\nI haven't heard of issues like that happening before.\n\nStarting this week, we will be posting status updates. This will show you your current grade as well as giving you a snapshot of each chapter's completion percent.",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 72,
+        "post_title": "Stuck on Stepnik Boolean function question",
+        "description": "I don't understand why this would be a syntax error.\u00a0 ",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Please make posts that include code private.\n\nAlso, you have an extra parentheses before input.",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 78,
+        "post_title": "what happens if we forget to do the stepik form from friday?",
+        "description": "",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "You can still do it up until the end of Week 10 (see the schedule) for full credit.",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 91,
+        "post_title": "stepik",
+        "description": "Has anyone else gotten a grade for stepik yet? mine still says\u00a0 /136, not sure if maybe I need to re-enter my stepik ID into the form.",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "I haven't posted any Stepik grades yet.\n\nWas going to post this week, but my primary laptop fried itself and am waiting on Amazon to send my replacement.",
+                "follow_up": []
+            },
+            {
+                "msg_number": "2",
+                "role": "student",
+                "description": "I thought stepik would be graded at the end of the quarter?",
+                "follow_up": [
+                    {
+                        "msg_number": "2.1",
+                        "role": "instructor",
+                        "description": "Yes, but we do check points so everyone can see their progress (and to confirm stepik is is correct)",
+                        "follow_up": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "post_number": 95,
+        "post_title": "Stepik in russian?",
+        "description": "how do i change this?",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "It's one of the dropdown menus on the right side, 2nd or 3rd from the right.\n\nI can't share a screenshot at the moment since it's not loading for me.",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 101,
+        "post_title": "Regarding Stepik ID form",
+        "description": "Hello, I accidentally missed submitting the Stepik ID google form by the end of week 2 (the one that we had to provide our Stepik ID/account number) so I talked to one of the TAs about it last Wendesday after submitting the form late, and he told me to make a post on Piazza with my Stepik account number to ensure I get credits for the assignments. Below attached is my Stepik account number/ID along with my student ID (just in case)\u00a0Account # : 868635879Student ID : A17380842I am not sure who is in charge of grading the Stepik exercises so I sent this private post to all the instructors, but whoever checks this post and is able to successfully put me into the system of grading Stepik exercises, could you please let me know that you were able to do so by replying to this post? Thank you!",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Information from the Google Form has not been downloaded yet, so you are fine, even if you filled out the form late! Your grades for Stepik should appear on Canvas correctly at the same time they do for the rest of the class\n\n:)",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 104,
+        "post_title": "Stepik Error?",
+        "description": "I keep getting this error in Stepik and I don\u2019t know how to get around it? Please help!\n",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "It seems like you might be returning the triangle_area function itself as an additional part of your output; make sure you're only printing/returning the output variable.\nIf this hint does not help, please provide more detailed information about your code, because it's difficult to determine the exact issue from this screenshot alone;\u00a0",
+                "follow_up": []
+            },
+            {
+                "msg_number": "2",
+                "role": "student",
+                "description": "I keep getting this error on different stepik problems, but on other ones it is fine? I have tried taking out various pieces of the code and cannot figure out how to get it to go away. Please help!\n",
+                "follow_up": [
+                    {
+                        "msg_number": "2.1",
+                        "role": "instructor",
+                        "description": "It's hard to say what the issue is from the code alone. Please come to office hours on autograder if you still need help.",
+                        "follow_up": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "post_number": 116,
+        "post_title": "Stepik",
+        "description": "Good afternoon,\u00a0\nI was not aware of having to create an ID. Is there a way to still get it? Will I loose all point from the Stepik exercises?\n",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "student",
+                "description": "nvm just saw the new announcement.",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 118,
+        "post_title": "Stepik",
+        "description": "My code keeps outputting twice but I don't know why and how to make it only output once. It has happened on almost all of my Stepik ones.\nCan someone help plsScreenshot_2024-05-02_at_6.32.00_PM.png",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Read the question carefully - \"Your task is to write\u00a0a variable declaration for a variable called\u00a0smaller\u00a0that holds the minimum of\u00a0x\u00a0and\u00a0y\"\nThat's all you have to do... Nothing else...\nJust write the variable declaration. There is no need to print it.\nThere is also no need to populate the values of x and y. Stepik will do that for you when it runs your code.",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 119,
+        "post_title": "Stepik",
+        "description": "Are we still able to turn in Stepik exercises even if they are from past weeks.",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "As per the syllabus,\u00a0\n\nThe online texbook records your progress, and we give a schedule of expected times to finish the readings. There is no penalty for completing these late, but all Stepik exercises must be completed by\u00a0Saturday of Week 10 by 8am. After this time, no late submissions will be accepted, for any reason.",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 123,
+        "post_title": "Stepik 2.1 incorrect grade",
+        "description": "\n\nI did my due diligence to block out the answer, as per AIO guidelines. why am I not receiving any points for this though I got it correct?\u00a0",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "student",
+                "description": "this is probably just a loud out error, try refreshing the page !\u00a0",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 127,
+        "post_title": "Stepik 5.3",
+        "description": "Hello everyone.\nI have been struggling with this one stepik exercise and wondered if anyone could give me a hand or a hint. My assumption was that Test1, Test3, and Test5 were correct. My confusion surrounds the returns at the end.\nThank you!\n\n\n",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "student",
+                "description": "Only tests 1 and 3 are correct, so you should choose 2, 4, and 5.\u00a0 These are wrong because if you look back at the text, they are supposed to return [1,4 ], [1, 4], and [1], but when you run the tests, they won't return these.\u00a0 I'm not really sure why.",
+                "follow_up": []
+            },
+            {
+                "msg_number": "2",
+                "role": "student",
+                "description": "The reason why 2,4,5 failed is because after the function finished returns, it stopped. Thereby, if the function finds the name in the list, it returns the [idx], then the whole function stops, and we only get [idx] for our output. Hope this helps.",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 132,
+        "post_title": "Stepik",
+        "description": "Is there a way to get help on stepik exercises? I am struggling to complete them.\u00a0",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Tutor hours are a great resource to get help on Stepik. Please check out https://autograder.ucsd.edu/queue/738 to see our hours.\u00a0\n\nIn addition, you are more than welcome to make a post here on Piazza with any issues you are struggling with on Stepik. If you include code in your post, please make the post private.",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 140,
+        "post_title": "Stepik Exercise Help",
+        "description": "I am a bit confused about what this question is asking and am unsure on how to proceed with my code. Could I get a breakdown of what is supposed to happen with the wanted coded? Thank you!\n",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "For this problem, all you need to do is to return an explicit 2D list representation of the 3x3 image.\n\ni.e. explicitly return a 2D list in this format (of course filling in the blanks)\n[[(255,0,0), (...), (...)], [...], [...]]",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 148,
+        "post_title": "Stepik Exercise 6.4",
+        "description": "Could I get more assistance with this problem, how to interpret it and how to proceed with my code?\n",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "For this part, you don't need to define a function as part of your answer. Your logic is correct, simply do it outside of a function!",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 163,
+        "post_title": "Stepik 6.1",
+        "description": "Hello,\u00a0\n\nI have been attempting to figure out what the difference is between my output answer and the desired output that the Stepik wants. While I understand that my code is a bit messy, I don't understand why my outcome would not pass through.\u00a0\n\nThank you in advance!\n\n\n",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "I'm pretty sure that the test cases aren't always going to be testing for 3 days. In other words, the number of rows in your output will depend on the length of predicted_growths, which is not always going to be 3.\n\nHope this helps. Please follow-up if you have any more questions",
+                "follow_up": []
+            },
+            {
+                "msg_number": "2",
+                "role": "student",
+                "description": "It helped a lot I was able to figure it out. Thank you!",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 174,
+        "post_title": "Stepik late turn in grading",
+        "description": "I have completed some of the stepik assignments late, and was wondering why the grade was still showing as a -1, is it not recognizably mine?",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "@151\n\nMissing Stepik ID",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 176,
+        "post_title": "Stepik credit in Canvas",
+        "description": "Hello,\n\nThe last time I asked a question on here was when I was having major problems with my Stepik not loading properly and as a result, I began using a different browser on my laptop for it. I was concerned that Stepik wasn't saving my progress. However, it began working fully in my new browser and since then I have 0 credit for any of my assignments in Canvas and I have done every single one. I submitted the Google form again with my Stepik user ID but no changes/updates have been made within Canvas. I am unsure what to do about this and very concerned that for some reason it is not showing that I have completed the assignments.\u00a0\n\nBest,\nLucy Catalano",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "We did a Stepik update last week and will do another one in day or two.\n\nWe always put up a pinned Piazza post on how to fix your scores (on the next update):\n@151\n\n",
+                "follow_up": []
+            },
+            {
+                "msg_number": "2",
+                "role": "student",
+                "description": "Thank you! I now have credit for my more recent stepik assignments under my new user ID, however,\u00a0 chapters 1 and 2 (the only ones I DID have credit for before my user ID somehow got changed due to them being on my old account) are now gone :( Is there a way that my grade can take into account that I have had two different user IDs? Thanks!",
+                "follow_up": [
+                    {
+                        "msg_number": "2.1",
+                        "role": "instructor",
+                        "description": "We can only apply a single Stepik ID to a student.\n\nThere is no way for us to get the scores from Chapters 1 and 2 while using the new Stepik ID.",
+                        "follow_up": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "post_number": 183,
+        "post_title": "Confusion over 7.3 skeptik",
+        "description": "For this question, since rgb_square has the same reference as both image and copy_image, why image and copy_image doesn't have the same reference. Also, is id and reference the same thing? Thanks for answering!\n",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "To answer this question, we'll look mostly at the function call rgb_square = make_copy(rgb_square)\nrgb_square and img contain references to the same object due to this part of the function call: make_copy(rgb_square). The object that rgb_square points to (the 2D list of tuples) is what is passed in as a parameter to the make_copy function, where it is now also represented by the local variable img, upon being pased in.\nAnd copy_img contains a reference to the same object as rgb_square in the rgb_square = part of the function call. Here, the object outputted by make_copy (which is copy_img, as it is returned by the function) is newly assigned to the rgb_square variable.\nimg and copy_img do not refer to the same object at any point; img first refers to the same object as rgb_square, then rgb_square is reassigned to contain a reference to the same object as copy_img.\n\nAnd, to answer your second question, the two are indeed closely related. A reference is a name that refers to the specific location in memory of a value (object); id() produces the numerical value that is the memory address for the object (generally supposed to be unique for an object during its lifetime).",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 188,
+        "post_title": "Stepik",
+        "description": "I have been completing assignments on Stepik but my course progress has not changed, what should I do? On the Stepik website itself, not Canvas*",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Instructions are on the pinned post to fix your Stepik ID: @185",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 194,
+        "post_title": "Anyone has problems accessing steptik?",
+        "description": "I cannot reach it in the last 2 days. It just never loads? Has this been an issue for everyone?",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "It's fine for me, so it might be an issue with your browser.\n\nTry a different one, it your phone.",
+                "follow_up": []
+            }
+        ]
+    }
+]
