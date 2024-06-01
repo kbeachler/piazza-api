@@ -2,11 +2,20 @@ import json_conv as converter
 import json
 import os
 import time
+import argparse
 
 from piazza_api import Piazza
 from piazza_api.exceptions import RequestError
 from json_len import calc_len
 
+def get_last_post_number(network):
+    feed = network.get_feed(limit=9999)
+    post_ids = [post['nr'] for post in feed['feed']]
+    if post_ids:
+        last_post_number = max(post_ids)
+    else:
+        last_post_number = None
+    return last_post_number
 
 def check_stepik(post):
     keywords = ["stepik", "stepnik", "steptik", "skeptik"]
@@ -15,8 +24,8 @@ def check_stepik(post):
     contains = any(keyword in post_title or keyword in post_description for keyword in keywords)
     return contains
 
-def processor(min, max, file_path):
-    for post_number in range(min, max):  
+def processor(cse_8a, min, max, file_path, filter_func=None):
+    for post_number in range(min, max+1):  
         try:
             post = cse_8a.get_post(post_number)  
             if post and 'history' in post and post['history'] and post['type']=="question":
@@ -26,23 +35,29 @@ def processor(min, max, file_path):
             pass
         time.sleep(2) # kept getting "moving too fast error"
 
-p = Piazza()
-p.user_login()
-cse_8a = p.network("lueekqs5pbe49z")
-# inclusive lower bound, exclusive upper bound
-processor(1, 200, "post_data.json")
-len = calc_len("post_data.json")
-print(f"Size of json: {len} ")
+def main():
+    parser = argparse.ArgumentParser(description='Process Piazza posts.')
+    parser.add_argument('--filter', type=str, default="stepik", help='Filter posts by a keyword (e.g., stepik)')
+    parser.add_argument('--min_post', type=int, default=1, help='Minimum post number to process')
+    parser.add_argument('--max_post', type=int, default=9999, help='Maximum post number to process')
+    parser.add_argument('--file_path', type=str, default='output.json', help='Path to the output file')
+    args = parser.parse_args()
 
+    p = Piazza()
+    p.user_login()
+    network = p.network("lueekqs5pbe49z")
+    #print("Getting feed")
+    last_post = get_last_post_number(network)
+    #print(f"Last post: {last_post}")
 
+    filter_func = None
+    maximum = None
+    if args.filter == 'stepik':
+        filter_func = check_stepik
+    if args.max_post == '9999':
+        maximum = last_post = get_last_post_number(network)
 
+    processor(network, args.min_post, args.max_post, args.file_path, filter_func)
 
-
-
-### Testing Stuff
-'''
-post = cse_8a.get_post(89)  
-converter.parse(post, "post_data.json") # HARD CODED FILE NAME
-post2 = cse_8a.get_post(127)  
-converter.parse(post2, "post_data.json") # HARD CODED FILE NAME
-'''
+if __name__ == "__main__":
+    main()

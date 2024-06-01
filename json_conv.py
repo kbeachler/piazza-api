@@ -37,7 +37,6 @@ def extract_follow_ups(follow_ups, parent_idx):
 
 def extract_child_history(children, anon_map):
     history = []
-    print(len(children))
     for idx, child in enumerate(children):
         if idx == 0:
             # if the post is marked resolved by an instructor, we start with the thread!!
