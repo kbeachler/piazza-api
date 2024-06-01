@@ -79,6 +79,16 @@ docker run -it piazza-api:latest
 
 Our goal is to extract Stepik-related posts from CSE 8A Spring Piazza (with professor Miranda at UCSD) and put them into a simplified format that can easily be comprehended and used as data for our research. We do this by producing a JSON file with a specific format (shown in the next section) which can be used to easily read a post and the chain of responses associated with it. 
 
+## Dependencies 
+Ensure you have the following installed:
+```pip install piazza-api python-dotenv beautifulsoup4 lxml```
+
+## Create .env File:
+Create a file named cred.env in the same directory as post_processor.py and add your Piazza credentials:
+
+PIAZZA_USERNAME=your_username
+PIAZZA_PASSWORD=your_password
+
 ## JSON Format
 
 For each post, we have an object represent the main message. This object includes 4 fields: the post number on Piazza (int), the post title (string), post description (string), and the history (list of objects). The post description is basically the body/question posed by the student. The history of a post is where we can track instructor or student responses, or any follow-up discussion on a post. Each object in our history list has four fields as well: message number (int), role (string), description (string), and follow-up (list of objects). The role represents whether the message is by an instructoreo or student, and the follow-up is a list of objects with the exact same format. This is representative of the threads that exist in a Piazza post. It is important to note that either a student or instructor can provide the "answer" to a question, and the student answer will be endorsed. Follow-up discussion can take place between anyone. 
@@ -88,9 +98,21 @@ The main script that you will interact with is post_processor.py.
 
 ``` python3 post_processor.py ```
 
- In its current state, running the above line will prompt you to log into Piazza with your credentials. Ensure that you have access to Miranda's Piazza first. Then, it will process posts 1-200 by extracting only those pertaining to Stepik, converting them to the proper json format (as seen in json_conv.py) and then dumping these json objects continuously to a file called post_data.json.
+ In its current state, running the above line will assume default arguments, processing all posts within the Piazza feed, extracting only those pertaining to Stepik, converting them to the proper json format (as seen in json_conv.py) and then dumping these json objects continuously to a file called "output.json". 
 
+ You can add additional arguments to process a specific portion of Piazza posts with a min_post or max_post (each referring to a specific number for the min or max you want to use). You can also specify a filepath that you want to dump the json contents to. 
 
+ Script Arguments
+- filter: Filter posts by a keyword (default: "stepik").
+- min_post: Minimum post number to process (default: 1).
+- max_post: Maximum post number to process (default: 9999). If set to 9999, it will process up to the latest post (as calculated within post_processor.py).
+- file_path: Path to the output file (default: 'output.json').
+
+Another example:
+
+```python3 post_processor.py --filter stepik --min_post 1 --max_post 200 --file_path post_data.json```
+
+** note: the only current filter is stepik, we may potentiall add others like lab or PA
 
 ## Contribute
 

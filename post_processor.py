@@ -7,6 +7,9 @@ import argparse
 from piazza_api import Piazza
 from piazza_api.exceptions import RequestError
 from json_len import calc_len
+from dotenv import load_dotenv
+
+load_dotenv('cred.env')
 
 def get_last_post_number(network):
     feed = network.get_feed(limit=9999)
@@ -43,12 +46,16 @@ def main():
     parser.add_argument('--file_path', type=str, default='output.json', help='Path to the output file')
     args = parser.parse_args()
 
+    username = os.getenv('PIAZZA_USERNAME')
+    password = os.getenv('PIAZZA_PASSWORD')
+
+    if not username or not password:
+        raise ValueError("Username or password not set in environment variables.")
+
     p = Piazza()
-    p.user_login()
+    p.user_login(email=username, password=password)
     network = p.network("lueekqs5pbe49z")
-    #print("Getting feed")
     last_post = get_last_post_number(network)
-    #print(f"Last post: {last_post}")
 
     filter_func = None
     maximum = None
