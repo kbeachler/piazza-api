@@ -1,2 +1,5 @@
 requests
 six
+python-dotenv
+beautifulsoup4
+lxml

@@ -7,6 +7,7 @@ Output: json file produced and added to, or existing json file is modified and a
 import json
 import os
 
+from image_processor import get_paths
 from parse_html import parse_def
 
 def get_role_rep(dic):
@@ -22,20 +23,21 @@ def get_role_rep(dic):
 def get_role_answer(type):
     return 'instructor' if type.startswith("i_") else 'student'
 
-def extract_follow_ups(follow_ups, parent_idx):
+def extract_follow_ups(follow_ups, parent_idx, post_number):
     follow_up_list = []
     for follow_up_idx, follow_up in enumerate(follow_ups):
         follow_up_data = {
             "msg_number": f"{parent_idx}.{follow_up_idx + 1}",
             "role": get_role_rep(follow_up),
             "description": parse_def(follow_up['subject']),
-            "follow_up": extract_follow_ups(follow_up['children'], f"{parent_idx}.{follow_up_idx + 1}")
+            "image_paths": get_paths(follow_up['subject'], f"{parent_idx}.{follow_up_idx + 1}", post_number),
+            "follow_up": extract_follow_ups(follow_up['children'], f"{parent_idx}.{follow_up_idx + 1}", post_number)
         }
         follow_up_list.append(follow_up_data)
 
     return follow_up_list
 
-def extract_child_history(children, anon_map):
+def extract_child_history(children, anon_map, post_number):
     history = []
     for idx, child in enumerate(children):
         if idx == 0:
@@ -45,7 +47,8 @@ def extract_child_history(children, anon_map):
                 "msg_number": str(idx + 1),
                 "role": "student",
                 "description": parse_def(child['subject']),
-                "follow_up": extract_follow_ups(child['children'], idx + 1)
+                "image_paths": get_paths(child['subject'], str(idx + 1), post_number),
+                "follow_up": extract_follow_ups(child['children'], idx + 1, post_number)
                 }
                 history.append(child_data)
             # for the first provided "answer" of the thread
@@ -55,7 +58,8 @@ def extract_child_history(children, anon_map):
                     "msg_number": str(idx + 1),
                     "role": get_role_answer(child['type']),
                     "description": parse_def(child_history['content']),
-                    "follow_up": extract_follow_ups(child['children'], idx + 1)
+                    "image_paths": get_paths(child_history['content'], str(idx + 1), post_number),
+                    "follow_up": extract_follow_ups(child['children'], idx + 1, post_number)
                 }
                 history.append(child_data)
         # for any follow up discussion!
@@ -66,7 +70,8 @@ def extract_child_history(children, anon_map):
                     "msg_number": str(idx + 1),
                     "role": get_role_rep(child),
                     "description": parse_def(child['subject']),
-                    "follow_up": extract_follow_ups(child['children'], idx + 1)
+                    "image_paths": get_paths(child['subject'], str(idx + 1), post_number),
+                    "follow_up": extract_follow_ups(child['children'], idx + 1, post_number)
                 }
                 history.append(child_data)
     return history
@@ -76,13 +81,14 @@ def extract_post_data(post_data):
     post_number = post_data['nr']
     post_title = post_data['history'][0].get('subject')
     post_description = parse_def(post_data['history'][0].get('content'))
-    
-    history = extract_child_history(post_data.get('children', []), post_data.get('anon_map', {}))
+    image_paths = get_paths(post_data['history'][0].get('content', ''), str(post_number), str(post_number))
+    history = extract_child_history(post_data.get('children', []), post_data.get('anon_map', {}), post_number)
     
     post_structure = {
         "post_number": post_number,
         "post_title": post_title,
         "description": post_description,
+        "image_paths": image_paths,
         "history": history
     }
     
@@ -104,7 +110,7 @@ def append_to_json_file(file_path, new_data):
     else:
         data = [new_data]
 
-    # Write the updated data back to the file
+    # write the updated data back to the file
     with open(file_path, 'w') as file:
         json.dump(data, file, indent=4)
 

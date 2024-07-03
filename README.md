@@ -81,7 +81,7 @@ Our goal is to extract Stepik-related posts from CSE 8A Spring Piazza (with prof
 
 ## Dependencies 
 Ensure you have the following installed:
-```pip install piazza-api python-dotenv beautifulsoup4 lxml```
+```pip install piazza-api python-dotenv beautifulsoup4 lxml requests```
 
 ## Create .env File:
 Create a file named cred.env in the same directory as post_processor.py and add your Piazza credentials:
@@ -91,7 +91,7 @@ PIAZZA_PASSWORD=your_password
 
 ## JSON Format
 
-For each post, we have an object represent the main message. This object includes 4 fields: the post number on Piazza (int), the post title (string), post description (string), and the history (list of objects). The post description is basically the body/question posed by the student. The history of a post is where we can track instructor or student responses, or any follow-up discussion on a post. Each object in our history list has four fields as well: message number (int), role (string), description (string), and follow-up (list of objects). The role represents whether the message is by an instructoreo or student, and the follow-up is a list of objects with the exact same format. This is representative of the threads that exist in a Piazza post. It is important to note that either a student or instructor can provide the "answer" to a question, and the student answer will be endorsed. Follow-up discussion can take place between anyone. 
+For each post, we have an object represent the main message. This object includes 5 fields: the post number on Piazza (int), the post title (string), post description (string), the history (list of objects), and the image paths (list of strings). The post description is basically the body/question posed by the student. The history of a post is where we can track instructor or student responses, or any follow-up discussion on a post. Each object in our history list has five fields as well: message number (int), role (string), description (string), follow-up (list of objects), and image paths (list of strings). The role represents whether the message is by an instructor or student, and the follow-up is a list of objects with the exact same format. This is representative of the threads that exist in a Piazza post. It is important to note that either a student or instructor can provide the "answer" to a question, and the student answer will be endorsed. Follow-up discussion can take place between anyone. As for image paths, these are paths to images in an output folder corresponding to that particular json object (whether it is a post, reply, or follow up). Many Piazza posts include images, which is why this aspect was necessary.
 
 ## Usage
 The main script that you will interact with is post_processor.py.
