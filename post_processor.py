@@ -54,7 +54,7 @@ def main():
 
     p = Piazza()
     p.user_login(email=username, password=password)
-    network = p.network("lueekqs5pbe49z")
+    network = p.network("lueekqs5pbe49z") # this is the cse 8a network for Miranda's SPR24 class
     last_post = get_last_post_number(network)
 
     filter_func = None

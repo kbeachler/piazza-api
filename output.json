@@ -529,5 +529,56 @@
         "post_title": "Stepik 7.4",
         "description": "I\u2019ve tried this question a few times and a keep getting stuck on it. I need help please!!\u00a0",
         "history": []
+    },
+    {
+        "post_number": 208,
+        "post_title": "pa8 Part 1.3 confusion",
+        "description": "Hello, I am a bit confused on the wording for this part of the stepik. I don't understand what the assignment means by ratio as the parameter and why we are given a threshold in the examples. Any help for understanding would be greatly appreciated.\n\n\u00a0\n",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "student",
+                "description": "I figured it out! The ratio and the threshold are the same thing.",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 213,
+        "post_title": "Stepik Section 11",
+        "description": "Is section 11 on Stepik required for our grade or is it optional?",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "student",
+                "description": "The syllabus states \u201c\u2026\u00a0\u00a0all Stepik exercises must be completed \u2026\u201d \u2014 so I\u2019d assume that includes section 11.",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 217,
+        "post_title": "Specific time to submit ALL Stepik by for this Sat?",
+        "description": "Hi, I just wanted to be sure whether all stepiks will also be due by 8am this saturday as the hard deadline?\u00a0\n\nmuch thanks\u00a0",
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "student",
+                "description": "Deleted text",
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 219,
+        "post_title": "Stepik 10.3",
+        "description": "Hi, for the Stepik 10.3 it asks us to transpose an image across a diagonal and my code works for symmetrical 2D lists but fails test #2 when I submit it so I am assuming it is testing an asymmetrical 2D list that doesn't have a diagonal to reflect across. I am unsure what it wants us to return for that specific case as I have tried returning the unedited image, an empty list, or None.\u00a0\nScreen_Shot_2024-06-05_at_3.51.45_PM.png",
+        "history": []
+    },
+    {
+        "post_number": 226,
+        "post_title": "Stepik chapter 6.1",
+        "description": "Chapter 6.1, 1st Problem (box 6)\nI'm lost on how to make an array as the it says index out of range. I tried replacing the len() with variables, tried \"predicted_growth[0]\", and \"predicted_growth[i]\", but no results\n\n",
+        "history": []
     }
 ]
