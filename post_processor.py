@@ -27,12 +27,19 @@ def check_stepik(post):
     contains = any(keyword in post_title or keyword in post_description for keyword in keywords)
     return contains
 
+def check_pa(post):
+    keywords = [" pa ", "pa1", "pa 1", "pa2", "pa 2", "pa3", "pa 3", "pa4", "pa 4", "pa5", "pa 5", "pa6", "pa 6", "pa7", "pa 7", "pa8", "pa 8","programming assignment", "programming assignments"]
+    post_title = post['history'][0].get('subject').lower()
+    post_description = post['history'][0].get('content').lower()
+    contains = any(keyword in post_title or keyword in post_description for keyword in keywords)
+    return contains
+
 def processor(cse_8a, min, max, file_path, filter_func=None):
     for post_number in range(min, max+1):  
         try:
             post = cse_8a.get_post(post_number)  
             if post and 'history' in post and post['history'] and post['type']=="question":
-                if check_stepik(post):
+                if filter_func(post):
                     converter.parse(post, file_path)
         except RequestError as e:
             pass
@@ -40,7 +47,7 @@ def processor(cse_8a, min, max, file_path, filter_func=None):
 
 def main():
     parser = argparse.ArgumentParser(description='Process Piazza posts.')
-    parser.add_argument('--filter', type=str, default="stepik", help='Filter posts by a keyword (e.g., stepik)')
+    parser.add_argument('--filter', type=str, help='Filter posts by a keyword (e.g., stepik or pa)')
     parser.add_argument('--min_post', type=int, default=1, help='Minimum post number to process')
     parser.add_argument('--max_post', type=int, default=9999, help='Maximum post number to process')
     parser.add_argument('--file_path', type=str, default='output.json', help='Path to the output file')
@@ -61,8 +68,10 @@ def main():
     maximum = None
     if args.filter == 'stepik':
         filter_func = check_stepik
+    elif args.filter == 'pa':
+        filter_func = check_pa
     if args.max_post == '9999':
-        maximum = last_post = get_last_post_number(network)
+        maximum = get_last_post_number(network)
 
     processor(network, args.min_post, args.max_post, args.file_path, filter_func)
 

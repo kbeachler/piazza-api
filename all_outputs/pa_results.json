@@ -1,0 +1,979 @@
+[
+    {
+        "post_number": 25,
+        "post_title": "Help with PA1",
+        "description": "Hi,\n\nAs I was working on the PA1 today, I ran into some trouble. When I run my code through the Python shell, everything works out well and gives me the same output that the assignment suggests. However, when I submitted the assignment to Gradescope, it says that my code has failed three tests, and gives me this message:\u00a0\n\nTest Failed: 'float' object is not callable\nI am unsure of how to revolve this error, as my code appeared to work on my end. Any help would be greatly appreciated.\n\npa1.py\n\nThank you,\n\nAva DeLuca\nA18123567",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Hi Ava,\n\nYou need to have all of the code that you write for the PA in a function called ounces_to_grams, which is covered in next Monday's lecture.\n\nIf you want to get a head start, here is the relevant pre-lecture.\n\nHope this helps. Please follow-up if you have any other questions/issues.\n\nJames",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 36,
+        "post_title": "Star Point Section of PA1",
+        "description": "Is the star point section at the bottom of PA1 going to be extra credit?",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "I'm not sure what you're referring to. There are no star points or extra credit sections in PA 1.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 39,
+        "post_title": "Use of \",\" versus \"+\" in print",
+        "description": "In the \"Full Program using Functions\" video, the code ended with:\nprint(\"distance in miles\" + str(d_mi))\n\nIn PA1, we're prompted to end the code with:\nprint(\"Weight in grams = \", weight_in_g)\n\nDoes \",\" in print translate to listing the parameters one after each other? When do we know when to use \"+\" or \",\"?\u00a0",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "When you use a + in the print function, you can\u00a0only combine two strings together.\u00a0\n\nOn the other hand, using a , is more convenient since it handles type conversion for you. (i.e. you can print out a string and an integer together without the need to convert the integer to a string) In addition, the , adds an extra space for you in the output so you don't need to have the space within the string.\n\nYou can honestly use either, just take into account what you want to print using what I mentioned above ^",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 40,
+        "post_title": "PA1 Submission",
+        "description": "Before I submitted my PA1, I tested it to make sure it worked, and it returned a positive result.\u00a0 However, when I submitted it, Gradescope said it failed tests 1.1.1, 1.1.2, and 1.1.3.\u00a0 It said that my float object was not callable.\u00a0 I was wondering how these failed tests will impact my grade.\n\nThank you!",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "student",
+                "description": "Always include instructors, not just me, in a private post.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 43,
+        "post_title": "Gradescope Autograder",
+        "description": "Is the autograder score for our PA1 going to be our final score? Because the autograder keeps saying that the tests are failing, but when I run the tests on my laptop it works just fine.",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "I'm not sure whether the way you're running the tests on your laptop matches the way it's done by the autograder, but I'd recommend to pay attention to the error output you're getting on Gradescope and try to adjust your code accordingly.\n\nAs a hint, make sure that you read the PA instructions thoroughly and are implementing the code using functions that match the provided descriptions (e.g. identical name, parameter(s), return type).",
+                "image_paths": [],
+                "follow_up": []
+            },
+            {
+                "msg_number": "2",
+                "role": "student",
+                "description": "I'm having the same issue where my tests are failing on gradescope, however, they ran accordingly on IDLE.",
+                "image_paths": [],
+                "follow_up": [
+                    {
+                        "msg_number": "2.1",
+                        "role": "instructor",
+                        "description": "A possible reason why you are experiencing this mismatch between your Autograder output and IDLE output may be due to function names. Please make sure that the name of the function you defined in your python file matches the name described in the PA1 instructions, \"ounces_to_grams\", otherwise the Autograder's tests will likely fail.\u00a0\n\nIf this is not the case, please ensure that your code works for the input types specified in the PA instructions, and that the format of the code is in line with the format described in the PA instructions. Also, the Autograder's error messages may provide insight as to what the issue may be.\u00a0\n\nAdditionally, tutor office hours are a great resource, so if you are ever encountering issues like this you are more than welcome to stop by office hours at autograder.ucsd.edu and us tutors can provide some guidance!\u00a0\n\nThank you for your inquiry, and feel free to follow up with additional questions :-)",
+                        "image_paths": [],
+                        "follow_up": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "post_number": 51,
+        "post_title": "PA1 - Write Up",
+        "description": "Hi guys! On PA1, what does it mean or what is it asking when it says to write known bugs or issues with the code? Does this mean to describe any errors encountered during the write up of the code or to run the code in autograder first? Thank you!\u00a0",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Hi, documenting bugs or issues requires you to evaluate the code you've written and identify areas that might need improvement. While potentially failing an autograder test might be an issue, we encourage you to try and understand why that might be happening and identify the root of the problem in your code, if any.",
+                "image_paths": [],
+                "follow_up": []
+            },
+            {
+                "msg_number": "2",
+                "role": "student",
+                "description": "If our code runs smoothly, do we leave this section of PA1 empty?\u00a0",
+                "image_paths": [],
+                "follow_up": [
+                    {
+                        "msg_number": "2.1",
+                        "role": "student",
+                        "description": "That's great! If you are not experiencing any you can write that your code ran smoothly in the section. You can also add info on what input types would not work/may cause errors for your function, or any other constraints the program has that may not necessarily be bugs.\u00a0\n\nThanks!\u00a0",
+                        "image_paths": [],
+                        "follow_up": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "post_number": 55,
+        "post_title": "PA1 Help",
+        "description": "is there anything that we can use to help us with the PA1 write-up? I am having a hard time even with the doc with its instructions, even writing the code properly.",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Yes! The best resource available to you are Office Hours. Today, the remaining hours are from now until 5:30PM and from 7:30-9:30PM. The tutors are happy to help you out, and I'm sure you will find them helpful. You can make a ticket to receive help on autograder.ucsd.edu :-)\n\nAdditionally, there are some resources from the lab slides that may help with setting up the right files and running the python module, see below:\n* Windows: https://drive.google.com/file/d/1LtJer4Ak3inzub5wOYVow9GBS-VXIilX/view* Mac: https://drive.google.com/file/d/1epsV-jlz_kUo1sh7p-Ykey0JPhDzt6qH/view?usp=sharing\n\nThanks for your inquiry and good luck!\u00a0",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 60,
+        "post_title": "PA1 Submisson",
+        "description": "I uploaded all my files, but I do not think that the autograder read my pa1 write up, even though it is uploaded. Is it because the pdf is not titled with the same exact title?\u00a0\nPlease let me know.",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "student",
+                "description": "You have to match the exact title and it should read it after that.\u00a0",
+                "image_paths": [],
+                "follow_up": []
+            },
+            {
+                "msg_number": "2",
+                "role": "student",
+                "description": "If I re-submit, does it count it late?\n",
+                "image_paths": [],
+                "follow_up": [
+                    {
+                        "msg_number": "2.1",
+                        "role": "instructor",
+                        "description": "Yes, it will count as late. However, every PA has an automatic 24-hour extension, and there is no penalty for using that extension.",
+                        "image_paths": [],
+                        "follow_up": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "post_number": 67,
+        "post_title": "PA2 Question",
+        "description": "For the PA2, it asks that all the code is put into one python file pa2.py. However, since in PA2, we're writing three different functions, do we have to\u00a0not implement the functions in order for Gradescope to test certain values?",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "student",
+                "description": "It doesn't matter, just put the three functions in PA2.py and gradescope will test it on its own by calling each function in the terminal to test it.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 73,
+        "post_title": "PA 1 questions",
+        "description": "Hi,\u00a0\n\nWhat are we supposed to submit under the section \"PA1 Questions\"? Since it's also weighted towards the final grade.\n\nThanks,\u00a0\nEuphie\u00a0",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Is this in reference to the \"questions\" section in the PA1 writeup? If so, you simply reply to the questions listed within the section--there should be two questions. If this is in regards to another part, please let me know and I will follow up accordingly. Thanks!\u00a0",
+                "image_paths": [],
+                "follow_up": []
+            },
+            {
+                "msg_number": "2",
+                "role": "student",
+                "description": "Hi,\n\nWhere do we find the prompt for the questions? Is it different from the ones in the writeup? Because I thought we submit them together with the assignments.\n\nThanks,\u00a0\nEuphie\u00a0",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 74,
+        "post_title": "Pa 2, Part 2 B Q1",
+        "description": "For Part 2 B Q1, I don't quiet get what the question is asking for, can someone help rephrase that for me?",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Of course, so to rephrase, evaluate what the values for names1[0] and names1[1] are in code snippet A, and then do the same for code snippet B. Then, compare your results for these values between code snippets and explain whether and why there is or is not a difference between the values.\u00a0\n\nHope this helps! Good luck~",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 76,
+        "post_title": "PA1 Grades",
+        "description": "Are the PA1 writeups supposed to be graded yet? The gradescope autograder gave me full credit for the code passing all tests but the writeup and \"filled out [blank]\" questions haven't been graded yet. Is this normal or have I made a mistake with submission that needs to be fixed and resubmitted through late submission? My writeup was uploaded as pa1-writeup.pdf as per the instructions.\u00a0",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Hello,The PA1 grades have not been published yet and are still being graded.\u00a0 The score you should currently see is the auto-graded portion including the tests and sanity checks that the expected files are found in your submission.\u00a0 Once we finish grading and publish the results to Gradescope, you will see your final score for that assignment including the \"filled out [blank]\" and write-up portion.I hope this helps!",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 77,
+        "post_title": "pa2 answer questions",
+        "description": "My output is the same as the answer; however, it says, 1.2.3) for example:\nIs it the way I wrote my code makes it incorrect?\n\nTest Failed: False is not true : Wrong value. [\"milk bread\",\"milk bread\"] should give [\"milk bread\",\"milk bread\"]. Your function gives: ('milk bread', 'milk bread')",
+        "image_paths": [
+            "output_images/post_77_msg_77_0.png"
+        ],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "student",
+                "description": "",
+                "image_paths": [
+                    "output_images/post_77_msg_1_0.png"
+                ],
+                "follow_up": []
+            },
+            {
+                "msg_number": "2",
+                "role": "student",
+                "description": "nvm, it's a simple step, I solved it.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 79,
+        "post_title": "PA1 resubmission",
+        "description": "For the PA1 resubmission on gradescope do we have until the due date to resubmit it as many times as we want/need?\u00a0",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "You can submit as many times as you want until the due date. Gradescope only uses the last submission.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 87,
+        "post_title": "Issue with PA2 Resubmit",
+        "description": "I am having an issue with PA2 Late resubmition.\nI believe GradeScope is unable to read my code that I have. (Maybe downloading off of Replit is causing it but I am unsure)\nError Message: (My code is below this image)\n\nMy Code:\n\n",
+        "image_paths": [
+            "output_images/post_87_msg_87_0.png",
+            "output_images/post_87_msg_87_1.png"
+        ],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Please edit your code to not ask for user input. The autograder simply calls your bill_calculator, get_bread_list and get_filling_list functions and doesn't answer to the input function calls. So it gets stuck at the input function call.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 90,
+        "post_title": "PA2 code not running with gradescope",
+        "description": "Dear TAs,\n\nI submitted my PA2 and received some errors that I don't understand:\n\nTest Failed: Failed to import test module: test_simple\nTraceback (most recent call last):\n  File \"/usr/lib/python3.10/unittest/loader.py\", line 436, in _find_test_path\n    module = self._get_module_from_name(name)\n  File \"/usr/lib/python3.10/unittest/loader.py\", line 377, in _get_module_from_name\n    __import__(name)\n  File \"/autograder/source/tests/test_simple.py\", line 7, in <module>\n    from pa2 import *\n  File \"/autograder/source/pa2.py\", line 23\n    return [sandwich[0],sandwich[-1]]\n                                     ^\nIndentationError: unindent does not match any outer indentation level\nI wonder if you can help me with debugging the code, which is running fine with IDIE:\n\n\n\ndef bill_calculator(units):\n\n\n\n\n\n\n    if units<0:\n\n\n\n\n\n\n        return \"Invalid Input!\"\n\n\n\n\n\n\n    if units<=5:\n\n\n\n\n\n\n        cost = 0.5\n\n\n\n\n\n\n    elif units>5 and units<50:\n\n\n\n\n\n\n        cost = 0.75\n\n\n\n\n\n\n    elif units>=50:\n\n\n\n\n\n\n        cost = 1\n\n\n\n\n\n\n    else:\n\n\n\n\n\n\n        return \"Invalid Input!\"\n\n\n\n\n\n\n    total_bill= units * cost\n\n\n\n\n\n\n    return total_bill\n\n\n\n\n\n\n\n\n\n\n\n\ndef get_bread_list(sandwich):\n\n\n\n\n\n\n   if len(sandwich) <2:\n\n\n\n\n\n\n        return []\n\n\n\n\n\n\n    return [sandwich[0],sandwich[-1]]\n\n\n\n\n\n\ndef get_filling_list(sandwich):\n\n\n\n\n\n\n    if len(sandwich) <= 2:\n\n\n\n\n\n\n        return []\n\n\n\n\n\n\n    return sandwich[1:-1]\n\n\nThank you so much of your help!",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "\n\nYou just have an extra space on 5th line from the bottom. The r doesn't line up with the i.\n",
+                "image_paths": [
+                    "output_images/post_90_msg_1_0.png"
+                ],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 93,
+        "post_title": "PA2 grade",
+        "description": "Hi instructors,\n\nMe and my partner have done the PA2 on time but only my partner submitted the code and write-up on gradescope with my name on it. Do I also need to submit the assignment in order to get grade for it?\n\nThanks",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "They need to add you to their Gradescope submission.\n\nThere should be something that looks like this on the top right-hand-side of the submission:\n",
+                "image_paths": [
+                    "output_images/post_93_msg_1_0.png"
+                ],
+                "follow_up": []
+            },
+            {
+                "msg_number": "2",
+                "role": "student",
+                "description": "Thank you so much! Will my PAs count as late assignment if I tell my partner add me to the submission at this time?",
+                "image_paths": [],
+                "follow_up": [
+                    {
+                        "msg_number": "2.1",
+                        "role": "instructor",
+                        "description": "If the original submission your partner made was on time, then it won't be late.\u00a0\n\nHere is the course policy on late submissions:\n\"There is no penalty for resubmissions, you can still earn full credit. We will take the highest score between your original submission and your late/resubmission.\n\nThe\u00a0Late/Resubmit\u00a0process also applies if your submission is late. You should strive to complete each PA before it\u2019s posted deadline as the PAs are practice for the exams. You will also receive earlier feedback and an extra grading attempt if you submit before the original deadline.\n\nFor those assignments near the end of the quarter, the deadline for all late/resubmissions will be Friday of Week 10 at 8am. After the automatic 24-hour extenstion, we will not accept any submissions after that time, for any reason.\"",
+                        "image_paths": [],
+                        "follow_up": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "post_number": 94,
+        "post_title": "Late/Resubmit Clarifications",
+        "description": "Will there be a late/resubmit assignment that can be taken instead of the original for a grade for every PA like there were for PA1 and PA2?\u00a0",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Yes, every PA gets a Late/Resubmit submission.\u00a0\n\nPlease see the schedule on the course website for due dates.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 102,
+        "post_title": "PA2 False Grade",
+        "description": "I submitted PA2 yet i received a 0/10 on it on Canvas.\u00a0",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "You submitted PA2 Late/Resubmit which hasn't closed yet and hasn't been graded.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 103,
+        "post_title": "Grade for PAs",
+        "description": "Hi instructors, me and my teammate finished the PA2 and PA3 on time and our name were listed together on the same page. The only thing is that we didn't know that she needs to add my name into her gradescope submission and we did that lately. But she submitted the original assignment on time. Why do I get a 0 for the assignment? Is there any mistakes?",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "You should be fine. As long as the original assignment was submitted on time.\u00a0\n\nIf there are any problems with your grade, then please make a separate post later on or come to office hours.\n\nThanks!",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 130,
+        "post_title": "grading",
+        "description": "Has pa3 been graded into canvas yet? On mine it just says -/10",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Looks like I forgot to post the grades after the regrade period closed.\n\nIt's posted now.\n",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 135,
+        "post_title": "PA2 grade",
+        "description": "I sent this question before but I think it's not been resolved yet. I got a 0 on PA2 and we figured out that we need to not only put both of our names in the write-up questions for credits, but also add into the submission group. So my teammate add my name to the gradescope submission a week after the deadline. I'm wondering why am I still a 0 on PA2? We submit and did it on time and she got a full credit for it.",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "I don't think your teammate added you, I don't see your name attached to a PA2 assignment.\n\nThis is why you still have a 0.\n\nI need your teammate to meet with a tutor or TA and work with them to get it fixed.\u00a0",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 152,
+        "post_title": "(Mac) Issues with Downloading NumPY - Step B",
+        "description": "Screenshot_2024-05-13_at_10.58.21_AM_(1).png\n\nI am having an issue in Step B - Step 2 of PA5, the image above shows my issue, ignore the white box as I edited the screenshot to remove my name. I did what was instructed to add the code to Terminal on Mac, however when I run the code, a message stating 'permission denied' pops up. I am unclear on what to do next or if this is a problem exclusive to me.\n\nEDIT: PROBLEM RESOLVED NOW.",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Apologies for the late response. Glad that things worked out.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 156,
+        "post_title": "NEW (Mac) Issues with Downloading NumPY - Step B",
+        "description": "Hello, I am a Mac User who is having trouble installing NumPY for this week's Programming Assignment. I went to a tutor hours to discuss issues with my macbook. I followed the instructions only for nothing to happen. The moment I get to Step 3 in Step B where I am supposed to add the command \"python3 -m ensurepip\", nothing happened and nothing was installed. Text never displayed that mentioned it was downloaded like the instructions mentioned. I was unable to have my problem resolved with the tutor I worked with. So I would like if other people provided insight on how to resolve my issue.\u00a0",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "I'm holding my remote office hours right now, you can create a ticket and we can hop on a call to resolve the issue!",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 157,
+        "post_title": "PA 4 Late/Resubmit autograder broken",
+        "description": "\nThe autograder is broken for the entirety of part 1.2, saying that the function should just give you what the original list of words is. In the example above, it says that the output should be 'happi' when the output should actually be 'sad' since word_two gets swapped with word_one.\nIt is also saying that my function gives None in every case when I tested it in the python shell and it works perfectly.",
+        "image_paths": [
+            "output_images/post_157_msg_157_0.png"
+        ],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Hi,\n\nYou're missing a return statement in your second function, which is why the autograder says that your function is returning None.\n\nThis simple modification to your code should fix your problem.\n\nWhile the autograder message seems to be incorrect, it is grading the function correctly.\n\nHope this helps!\n",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 158,
+        "post_title": "Strange Gradescope Error Message?",
+        "description": "Hi! Gradescope graded my pa4 part one fine when I submitted just that, but when I included my code for part two, it gave me this error message. I'm not sure what it means or how to fix it? I've included an image of the error message as well as an image of my code that caused the problem when entered. Please help!\n\n",
+        "image_paths": [
+            "output_images/post_158_msg_158_0.png",
+            "output_images/post_158_msg_158_1.png"
+        ],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "You have not defined 'words' anywhere in your code. When you're calling find_and_swap inside your print function 'words' should be a list. There is nothing called 'words' in your code that is passed during your function call inside the print function.\n\nAs a side note, while submitting your code to autograder, it is best to remove all function calls that you've made for testing your function. The autograder shall pass its own test inputs to your function, so you only need the function definitions while submitting to autograder.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 160,
+        "post_title": "Pa5: Syntax Error",
+        "description": "I have also been running into problems with this piece of code. I fail to see where the syntax error is. Could I please get a pointer? Thank you. ",
+        "image_paths": [
+            "output_images/post_160_msg_160_0.png"
+        ],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Check your if condition. You are assigning ('=') instead of comparing ('==').",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 161,
+        "post_title": "Pa5 Part 1",
+        "description": "For part 1.1 I am trying to make separate lists with exactly 3 elements in it. However my code is creating one list with all the elements. How can I make the code to make a new list with these for loops?\n\ndef make_board(non_perishable_food, fruits, vegetables):\u00a0 board = []\u00a0 for i in range(len(non_perishable_food)):\u00a0 \u00a0 for j in range(len(fruits)):\u00a0 \u00a0 \u00a0 for k in range(len(vegetables)):\u00a0 \u00a0 \u00a0 \u00a0 board += [non_perishable_food[i], fruits[j], vegetables[k]]\u00a0 return board\nnon_perishable_food = [\"canned soup\", \"sausage\", \"pasta\"]fruits = [\"bananas\", \"apples\"]\u00a0vegetables = [\"onions\"]\u00a0print(make_board(non_perishable_food, fruits, vegetables))\n\nPrinted result: ['canned soup', 'bananas', 'onions', 'canned soup', 'apples', 'onions', 'sausage', 'bananas', 'onions', 'sausage', 'apples', 'onions', 'pasta', 'bananas', 'onions', 'pasta', 'apples', 'onions']",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "You are concatenating a list of [<element of non_perishable_food>, <element of fruits>, <element of vegetables>] to the board list.\nRemember that concatenating two lists will merge the two lists into a single list -\u00a0\nFor example - lst1 = [1,2,3], lst2 = [4,5,6], lst1+lst2 is [1,2,3,4,5,6]\n\nHowever, if you try to append your list instead of concatenate, you will be adding a\u00a0list to the end of a list.\nFor example - lst1 = [1,2,3], lst2 = [4,5,6], lst1.append(lst2) is [1,2,3,[4,5,6]]\n\nAppend adds whatever you pass into it to the end of a list, while concatenating will combine two lists into a single resultant list.\n\nDoes this help to solve your dilemma?",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 162,
+        "post_title": "Late/resubmit credit",
+        "description": "Will we get full credit by using late/resubmit? My Pa2 only got 0.25/10, I resubmited it 5 days later than the normal due date, and it then shows i got 10/10. How many score i actually get?",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "You did get full credit for the late/resubmit.\n\nYou can see your grade in Canvas.\n\nWe drop the lower of the two grades for the PA.\u00a0The * means it was dropped.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 167,
+        "post_title": "PA5 grading question",
+        "description": "I got marked off on my PA5 writeup question 2. However, when I went to go check for the correct answer, I saw that my answer matches the correct one.\nThis was my answer:\nThe order in which the elements will be printed is:Data[2][2], data[1][2], data[0][2], data[2][0], data[1][0], data[0][0]110, 70, 30, 90, 50, 10\n\nDid I get marked off because of the capitalized \"D,\" or was it because I had added the actual printed values below (110, 70, 30, 90, 50, 10), or was it something else?",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "I have corrected your submission and awarded full points.\u00a0",
+                "image_paths": [],
+                "follow_up": []
+            },
+            {
+                "msg_number": "2",
+                "role": "student",
+                "description": "Thank you! On canvas grades, PA5 is still marked as 9/10. Will that be updated later on?",
+                "image_paths": [],
+                "follow_up": [
+                    {
+                        "msg_number": "2.1",
+                        "role": "instructor",
+                        "description": "Sometimes it takes a little while for Gradescope to sync with Canvas, it should be updated now though!",
+                        "image_paths": [],
+                        "follow_up": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "post_number": 173,
+        "post_title": "Grading on PA5",
+        "description": "I was given a 4/10 on PA5 missing 6 points for the auto grader score. I attended office hours and am positive at least some of my code is correct even if it failed the auto grader tests. Is this the final grade for PA5? I also wanted to write that my lab5 has still not been graded. A TA did ask me if it was fixed and I did say yes but I was mistaken.\u00a0",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Hi Alexander,\n\nI fixed your grade for Lab 5. You can get points back for PA 5 by doing the Late/Resubmit assignment, which will be open until May 23, 2024 at 8 AM (WK 8 Thurs)\n\nIf you would like some help with the resubmission, I would recommend going to tutor/office hours at autograder.ucsd.edu",
+                "image_paths": [],
+                "follow_up": []
+            },
+            {
+                "msg_number": "2",
+                "role": "student",
+                "description": "On the resubmitting form will the code be manually graded or is the auto grader taken at face value?\u00a0",
+                "image_paths": [],
+                "follow_up": [
+                    {
+                        "msg_number": "2.1",
+                        "role": "instructor",
+                        "description": "Face value. PA 5 code is not manually graded",
+                        "image_paths": [],
+                        "follow_up": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "post_number": 177,
+        "post_title": "PA3 resubmit",
+        "description": "hello, I was wondering if PA3 resubmits have been graded? I submitted mine before the late due date and it hasn't been graded yet, thank you !",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Grading is till in progress.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 178,
+        "post_title": "PA 5, Complement code",
+        "description": "My testComplement 1, 2, 3 are failing but I don\u2019t know why. For test 3, my result looks the same as the expected result but the test failed. As for test 1 and 2, my result values seemed to be flipped compared to the expected, but I\u2019ve tried to fix it and it still failed, so I'm not sure how to fix it properly.\n\u00a0",
+        "image_paths": [
+            "output_images/post_178_msg_178_0.png",
+            "output_images/post_178_msg_178_1.png"
+        ],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Hi Anita,\n\nI'd recommend reviewing how a complement is defined in regard to the RGB values. Currently, the only cases in which a transformation is applied is if a pixel is entirely blue (0,0,255) or entirely red (255,0,0).\nFrom the PA instructions: \"This filter returns a new image where the red and blue color components of every pixel are swapped\".\nAs a hint, think about implementing a transformation that is less reliant on if-statements and instead performs a change in the positions of component values in (R,G,B) for every pixel.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 179,
+        "post_title": "Problem shooting",
+        "description": "I didn't modify anything in the code; however when I was testing out the code, it resulted in an error.",
+        "image_paths": [
+            "output_images/post_179_msg_179_0.png"
+        ],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "student",
+                "description": "It seems the computer ran the code; however, I don't know how it encouters an error message",
+                "image_paths": [
+                    "output_images/post_179_msg_1_0.png"
+                ],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 180,
+        "post_title": "PA5\uff0c part 1.2",
+        "description": "I have no idea why the below function gives me \"Legitmate\" which is a wrong output\n\nand why the second function do gives me right output, why this happen?\n\n",
+        "image_paths": [
+            "output_images/post_180_msg_180_0.png",
+            "output_images/post_180_msg_180_1.png"
+        ],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "One very important thing to remember is that whenever a return statement is encountered, the function exits, whether your loop has finished or not! The key difference here is the indentation. In the first example, only the very first values for x and y will be checked, since we will encounter a return statement and exit the function no matter what. If the pixels we check are a 1, we will return \"Illegitimate\" and if none of those if statements are True, we return \"Legitimate\". This is incorrect, since we need to check ALL possible edge pixels before we can say for sure that our pool is legitimate.\u00a0\n\nThe second piece of code does this correctly, since it will only return \"Legitimate\" after all possible edge pixels have been checked, and no violations were found. Hope this helps!",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 181,
+        "post_title": "PA 6 Part 3",
+        "description": "Hello, I am confused on the instructions for part 3 (testing) on PA 6. On the instructions document, it says for the function test_mirror that it will test the chromascale function. I'm not sure what the chromascale function is, I thought it would be the blend function. However, I don't know why the function says test_mirror and that on the file pa6-test.py, it tells me to call the mirror function. The instructions seem to be the same for the second test function as well, where the instructions tell me to test the crop function when it is called test_add_stamp.Does the test case require me to use the blend (chromascale) function on the original cat image, then test the mirror function on that modified image? Or do I need to test the mirror function on the original cat image? Thanks in advance.",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Hi,\n\nThere seems to be a mistake on the doc. test_mirror() function should test the mirror() function you've implemented earlier and test_add_stamp() should test the add_stamp() function. We will fix the text in the writeup, sorry about the confusion. Hope this helps!",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 184,
+        "post_title": "Autograder test failed for Pa5 part1.1",
+        "description": "I don't think i messed anything up, function works well on my computer\n\n",
+        "image_paths": [
+            "output_images/post_184_msg_184_0.png",
+            "output_images/post_184_msg_184_1.png"
+        ],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Hi, the autograder expects your function to return the result (your return statement should handle returning the correct value). Looking at your code, it seems like you're not returning anything, only printing the result to the console. Hope this helps!",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 186,
+        "post_title": "pa5",
+        "description": "hello, i am working on complement for pa5 but im getting errors for swapping the values of rgb. ive tried to use a list to test the function and it worked fine, so it seems like when i tried it on the image it went out of range?\u00a0\n \u00a0\n",
+        "image_paths": [
+            "output_images/post_186_msg_186_0.png",
+            "output_images/post_186_msg_186_1.png",
+            "output_images/post_186_msg_186_2.png"
+        ],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "In complement(\"images/cat.jpg\"), you're running the complement function with the string \"images/cat.jpg\" as the input, rather than the actual image/corresponding 2D list itself.\nIn order to effectively use the function on an image input, first load the image as a list using the load_img(filename) function; use the resulting 2D list of tuples as the complement function input.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 187,
+        "post_title": "PA6 Help",
+        "description": "I am not sure what I am doing wrong for Part 2.2. Could you break down the process and identify my code's error?\n\ndef add_stamp(stamp_image, background_image):\n\u00a0\u00a0 modified_image = []\n\u00a0\u00a0 for row in background_image:\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 for i in range(len(stamp_image)):\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 r = []\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 for j in range(len(stamp_image[i])):\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 r.append(background_image[i][j])\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 modified_image.append(r)\n\u00a0\u00a0\u00a0\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 for x in range(len(modified_image)):\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 for y in range(len(modified_image[0])):\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 modified_image[x][y] = stamp_image[x][y]\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 return modified_image",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "I would recommend starting with print statements in your code to see if things are behaving the way you expect them to behave.\n\nSomethings to consider:\n1). What is the error trying to tell you if you are getting an explicit error in the shell?\n2). How is your code behaving differently from what you're expecting?\n3). Are the for loops iterating over the correct ranges?\n4). Are you accessing the correct indices in the 2D array?\n5). For the indices that you are accessing in the 2D array, are you making the correct modifications?",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 190,
+        "post_title": "Problem with CSE8AImage on Mac",
+        "description": "I went to Alexis\u2019 tutor hours and tried to fix an issue where my code would not Import CSE8AImages. We tried to solve the problem but were unable to do so. We eneded up copying the code in CSE8AImage and inserting it into my pa5 code and it worked.\u00a0Does anyone know how to solve this problem? I downloaded pillow and bumpy on the terminal too, so I\u2019m confused why I\u2019m running into this.",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "There are many things that could be contributing to this, and it is hard to say without more information. It's good that it works now, but if you would like more specific help, I would recommend going to tutor hours on autograder.\n\nSome generic things that might have caused this:\n1). CSE8AImage was not in the same folder as the file you're trying to import it in\n2). There were some mis-spellings in the code\n3). A recent OS update made it such that some programs aren't working as expected.\n\nThis really varies, so it's hard to say.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 191,
+        "post_title": "gradescope error?",
+        "description": "I'm trying to upload my pa5 and I get this, the name of the files are correct, I don't understand this error? it was fine before\n\n",
+        "image_paths": [
+            "output_images/post_191_msg_191_0.png"
+        ],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "\nIt appears your file name contains a capital W for writeup and a space before the period.Please let us know if removing the space and converting the title to lowercase doesn't solve the issue.As for the indentation error, I encourage you to check your indentation on line 84 and line 80.",
+                "image_paths": [
+                    "output_images/post_191_msg_1_0.png"
+                ],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 192,
+        "post_title": "PA5 num Py and pillow packages",
+        "description": "cd C:\\Users\\yosse\\AppData\\Local\\Programs\\Python\\Python312\n\nwhy do i keep getting an invalid syntax error",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "It's difficult to say what exactly the issue is here; if you're typing this command in the Python shell rather than your computer's command prompt/terminal, that's one possible solution.\nIf this doesn't help, I'd recommend starting a followup discussion to this post with a screenshot with the commands you've been running. Alternatively, it might be easier to go to tutor hours to get help with this.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 193,
+        "post_title": "pa6 confusion",
+        "description": "I am struggling to get the code to work.\nFor the mirror, it is copying half of the original image and the mirror side is next to it.\nFor the add stamp, I am able to put the stamp over the background image yet I am unable to keep the original size of the background image\n",
+        "image_paths": [
+            "output_images/post_193_msg_193_0.png",
+            "output_images/post_193_msg_193_1.png",
+            "output_images/post_193_msg_193_2.png"
+        ],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "For the mirror method, I would recommend making a new image instead of trying to overwrite the original one.\n\nFor the add stamp method, I would recommend iterating through all of the pixels of the background image and only taking pixels from the stamp image at certain points.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 196,
+        "post_title": "Pa7 group submission",
+        "description": "On Gradescope I\u2019m not sure how to add another person. It seems like it is not allowing me to. I have added another person in the past but it is not giving me the option I need. Please let me know what to do!!\u00a0",
+        "image_paths": [
+            "output_images/post_196_msg_196_0.png"
+        ],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "I've changed the settings. Can you please try again?",
+                "image_paths": [],
+                "follow_up": []
+            },
+            {
+                "msg_number": "2",
+                "role": "student",
+                "description": "It works now, thank you!\u00a0",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 198,
+        "post_title": "When will the PA6 grade be released?",
+        "description": "Hi,\nSince the resubmit for PA6 is due tomorrow morning at 8am, but I haven't gotten my PA6 scores yet, I'd like to ask when the PA6 scores will be released. Thanks!",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "We had the wrong due date for PA6 Late/Resubmit. It's not fixed and due next Wednesday.\n\nWe hope to get PA6 graded in the next day or so.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 208,
+        "post_title": "pa8 Part 1.3 confusion",
+        "description": "Hello, I am a bit confused on the wording for this part of the stepik. I don't understand what the assignment means by ratio as the parameter and why we are given a threshold in the examples. Any help for understanding would be greatly appreciated.\n\n\u00a0\n",
+        "image_paths": [
+            "output_images/post_208_msg_208_0.png"
+        ],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "student",
+                "description": "I figured it out! The ratio and the threshold are the same thing.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 209,
+        "post_title": "PA Grade",
+        "description": "My PA5 & PA6 have not been graded yet, however my PA7 has. Is this because I turned my PA5 & PA6 in late? I just want to make sure there is nothing on my part I need to do.\n\nThank you!!",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Hi Mariam! The PA5 late/resubmit and PA5 Late/Resubmit assignment grades have not been released yet, which is why you have not received your grade yet. Note that the submission for regular PA5 and PA6 are different from the Late/Resubmit submissions, which is why the regular submissions have been released but the late/resubmits are still being graded. Thanks!\u00a0",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 211,
+        "post_title": "Adding a partner",
+        "description": "Hello, I can't figure out how to add my partner on the PA7 lat submit. There is no button on my submission page that asks me if I want to add a partner to the assignment.\u00a0",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "student",
+                "description": "late submit*",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 212,
+        "post_title": "Grade on PA6",
+        "description": "Hello,I noticed I got a zero on PA6 even though my pair programming partner got a grade back. My name was added to the PA. We also resubmitted PA6 to the late/resubmit just in case it did not go through. The code should be the same.\nThank you!",
+        "image_paths": [],
+        "history": []
+    },
+    {
+        "post_number": 216,
+        "post_title": "Gradescope issue PA7",
+        "description": "I am unable to add my partner on gradescope to my group for PA7 Late/Resubmit. Please advise.\u00a0",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Try again, you should now be able to add your partner to the submission",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 218,
+        "post_title": "pa5 part 1.3",
+        "description": "are we going to have discussion and the lab for this week? (Dude to the UAW strike)",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Yes, we will have discussion and lab.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 220,
+        "post_title": "PA8 idk why my tests are failing",
+        "description": "",
+        "image_paths": [
+            "output_images/post_220_msg_220_0.png",
+            "output_images/post_220_msg_220_1.png"
+        ],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Just looked up your submission. Seems like you figured it out.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 221,
+        "post_title": "I keep getting all tests failed on PA6",
+        "description": "Whenever I submit my filed onto gradescope for PA6 they are all failed but the code should be right because I'm getting all the images but it still says tests are failed\u00a0\n",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "Just looked up your submission. Seems like you figured it out.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 224,
+        "post_title": "what does this test fail mean?",
+        "description": "For pa8, for the 1.1.1 test, it says\n\nTest Failed: min() arg is an empty sequence\nWhat does it mean and how to I adjust this part of my code?\nMy code:\nblm_protest_data = get_blm_data(\"blm_state.csv\")\ndef minimum_blm_protest_attendence(states):\u00a0 \u00a0 count = []\u00a0 \u00a0 num = 0\u00a0 \u00a0 for state in blm_protest_data:\u00a0 \u00a0 \u00a0 \u00a0 if state[\"State\"] in states:\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 count.append(state['TotalAttendance'])\u00a0 \u00a0 num = min(count)\u00a0 \u00a0 return int(num) #TODO: Return the correct value\n",
+        "image_paths": [],
+        "history": []
+    },
+    {
+        "post_number": 225,
+        "post_title": "PA8 Grade",
+        "description": "My PA8 was never graded, therefore I couldn't do the late/ resubmit. Am I missing something?\u00a0",
+        "image_paths": [],
+        "history": [
+            {
+                "msg_number": "1",
+                "role": "instructor",
+                "description": "As I said in lecture, we couldn't grade it in 2 days, so I extended the hard deadline to Saturday and didn't open the late/resubmit.\n\nThe downside of a week 9 pa release.",
+                "image_paths": [],
+                "follow_up": []
+            }
+        ]
+    },
+    {
+        "post_number": 228,
+        "post_title": "PA8 resubmit",
+        "description": "I keep getting tests failed for the PA8 resubmit",
+        "image_paths": [],
+        "history": []
+    }
+]

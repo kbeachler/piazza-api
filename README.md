@@ -96,14 +96,14 @@ For each post, we have an object represent the main message. This object include
 ## Usage
 The main script that you will interact with is post_processor.py.
 
-``` python3 post_processor.py ```
+``` python3 post_processor.py --filter stepik```
 
- In its current state, running the above line will assume default arguments, processing all posts within the Piazza feed, extracting only those pertaining to Stepik, converting them to the proper json format (as seen in json_conv.py) and then dumping these json objects continuously to a file called "output.json". 
+ In its current state, running the above line will assume default arguments aside from the filter, processing all posts within the Piazza feed, extracting only those pertaining to the filter, converting them to the proper json format (as seen in json_conv.py) and then dumping these json objects continuously to a file called "output.json". It is essential to either include "--filter pa" or "--filter stepik" so that the posts will be filtered. 
 
  You can add additional arguments to process a specific portion of Piazza posts with a min_post or max_post (each referring to a specific number for the min or max you want to use). You can also specify a filepath that you want to dump the json contents to. 
 
  Script Arguments
-- filter: Filter posts by a keyword (default: "stepik").
+- filter: Filter posts by a keyword (either stepik or pa).
 - min_post: Minimum post number to process (default: 1).
 - max_post: Maximum post number to process (default: 9999). If set to 9999, it will process up to the latest post (as calculated within post_processor.py).
 - file_path: Path to the output file (default: 'output.json').

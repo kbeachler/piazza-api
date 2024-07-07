@@ -79,7 +79,7 @@ def extract_child_history(children, anon_map, post_number):
 
 def extract_post_data(post_data):
     post_number = post_data['nr']
-    post_title = post_data['history'][0].get('subject')
+    post_title = parse_def(post_data['history'][0].get('subject'))
     post_description = parse_def(post_data['history'][0].get('content'))
     image_paths = get_paths(post_data['history'][0].get('content', ''), str(post_number), str(post_number))
     history = extract_child_history(post_data.get('children', []), post_data.get('anon_map', {}), post_number)
